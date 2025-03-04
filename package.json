@@ -1,0 +1,27 @@
+{
+  "name": "playwright_winter_2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "googleTest": "npx playwright test /src/test/Day1_121624/T1_GoogleSearch.spec.ts --workers=1 --project=chrome --reporter=html",
+    "smokeSuite": "npx playwright test --grep @smoke /src/test/* --headed --workers=1 --project=chrome --reporter=html",
+    "regressionSuite": "npx playwright test  --grep @regression /src/test/* --headed --workers=1 --project=chrome --reporter=html",
+    "bingTest": "npx playwright test  /src/test/Day2_121724/T1_BingSearch.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "googleSearchLoop": "npx playwright test /src/test/Day2_121724/T2_GoogleSearchLoop.spec.ts --headed --workers=1 --project=firefox --reporter=html",
+    "wwTest": "npx playwright test /src/test/Action_Item/WeightWatchers.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "bingSearchReusable": "npx playwright test /src/test/Day3_122324/Bing_ReusableMethod.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "allTests": "npx playwright test /src/test/* --headed --workers=1 --project=chrome --reporter=html",
+    "expressTest": "npx playwright test /src/test/Action_Item/Express_Shopping.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "googleSearchPOM": "npx playwright test /src/test/GoogleTest_POM/Google_Search_Results.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "bingSearchCicd": "npx playwright test /src/test/Day3_122324/Bing_ReusableMethod.spec.ts --workers=1 --project=chrome --reporter=html"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2"
+  }
+}
