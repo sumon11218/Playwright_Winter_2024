@@ -16,7 +16,7 @@ test('Search for soccer on bing @smoke', async () => {
     await page.waitForTimeout(2000)
 })
 
-test('Capture search number for soccer', async () => {
+test('Capture search number for soccer @smoke', async () => {
     let result = await captureText(page, "//*[@class='sb_count']", "Search Result")
     let arrayResult = result.toString().split(" ")
     console.log("Search number for soccer: " + arrayResult[1])

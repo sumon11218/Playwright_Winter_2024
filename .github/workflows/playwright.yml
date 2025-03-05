@@ -17,10 +17,9 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
-    - name: Run Bing Search Test
-      run: npm run bingSearchCicd
-    - name: Run Google Search Test
-      run: npm run googleTestCicd
+    - name: Run Smoke Test
+      run: npm run smokeTests
+
 
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
