@@ -4,21 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "googleTest": "npx playwright test /src/test/Day1_121624/T1_GoogleSearch.spec.ts --workers=1 --project=chrome --reporter=html",
-    "smokeSuite": "npx playwright test --grep @smoke /src/test/* --headed --workers=1 --project=chrome --reporter=html",
-    "regressionSuite": "npx playwright test  --grep @regression /src/test/* --headed --workers=1 --project=chrome --reporter=html",
-    "bingTest": "npx playwright test  /src/test/Day2_121724/T1_BingSearch.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "googleSearchLoop": "npx playwright test /src/test/Day2_121724/T2_GoogleSearchLoop.spec.ts --headed --workers=1 --project=firefox --reporter=html",
-    "wwTest": "npx playwright test /src/test/Action_Item/WeightWatchers.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "bingSearchReusable": "npx playwright test /src/test/Day3_122324/Bing_ReusableMethod.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "allTests": "npx playwright test /src/test/* --headed --workers=1 --project=chrome --reporter=html",
-    "expressTest": "npx playwright test /src/test/Action_Item/Express_Shopping.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "googleSearchPOM": "npx playwright test /src/test/GoogleTest_POM/Google_Search_Results.spec.ts --headed --workers=1 --project=chrome --reporter=html",
-    "bingSearchCicd": "npx playwright test /src/test/Day3_122324/Bing_ReusableMethod.spec.ts --workers=1 --project=chrome --reporter=html",
-    "googleTestCicd": "npx playwright test /src/test/Day1_121624/T1_GoogleSearch.spec.ts --workers=1 --project=chrome --reporter=html",
-    "smokeTests": "npx playwright test  --grep @smoke /src/test/* --workers=1 --project=chrome --reporter=html"
-
-
+    "bingTest": "npx playwright test /src/test/bingsearch2.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "smokeTests": "npx playwright test --grep @smoke /src/test/* --headed --workers=1 --project=chrome --reporter=html",
+    "uspsTest": "npx playwright test /src/test/usps_test.spec.ts --headed --workers=1 --project=chrome --project=firefox --project=safari --reporter=html",
+    "cop_bing_test": "npx playwright test /src/test/Co-Pilot_Bing_Test.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "ww_test": "npx playwright test /src/test/ww_test.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "bing_loop": "npx playwright test /src/test/bingsearch_loop.spec.ts --headed --workers=1 --project=chrome --reporter=html"
   },
   "keywords": [],
   "author": "",
