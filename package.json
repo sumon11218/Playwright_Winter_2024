@@ -11,6 +11,7 @@
     "ww_test": "npx playwright test /src/test/ww_test.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "bing_loop": "npx playwright test /src/test/bingsearch_loop.spec.ts --headed --workers=1 --project=chrome --reporter=html",
     "bing_reusable": "npx playwright test /src/test/bingsearch_reusable.spec.ts --headed --workers=1 --project=chrome --reporter=html",
+    "empowerTest": "npx playwright test /src/test/Empower_Test.spec.ts --workers=1 --project=chrome --reporter=html",
     "show_report": "npx playwright show-report"
   },
   "keywords": [],
